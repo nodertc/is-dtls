@@ -12,8 +12,10 @@
   },
   "keywords": [
     "dtls",
+    "udp",
     "rfc7983",
     "rfc5764",
+    "rfc4347",
     "packet",
     "message",
     "test",
