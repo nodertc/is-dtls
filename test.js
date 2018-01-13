@@ -14,16 +14,14 @@ test('should work', t => {
   t.end()
 })
 
-test('should throws', t => {
-  const err = /Argument 1 should be a Buffer./
-
-  t.throws(() => isDtls(1), err)
-  t.throws(() => isDtls(NaN), err)
-  t.throws(() => isDtls(null), err)
-  t.throws(() => isDtls(undefined), err)
-  t.throws(() => isDtls({}), err)
-  t.throws(() => isDtls(''), err)
-  t.throws(() => isDtls(Buffer.alloc(0)), err)
+test('should be false', t => {
+  t.false(isDtls(1))
+  t.false(isDtls(NaN))
+  t.false(isDtls(null))
+  t.false(isDtls(undefined))
+  t.false(isDtls({}))
+  t.false(isDtls(''))
+  t.false(isDtls(Buffer.alloc(0)))
 
   t.end()
 })
