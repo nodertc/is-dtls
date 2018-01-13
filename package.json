@@ -34,6 +34,6 @@
   },
   "homepage": "https://github.com/nodertc/is-dtls#readme",
   "dependencies": {
-    "tape": "^4.7.0"
+    "tape": "^4.8.0"
   }
 }
